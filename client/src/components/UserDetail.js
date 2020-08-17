@@ -6,7 +6,7 @@ import LoadingFallBack from "./LoadingFallback";
 import { THUNK } from "../helpers/constants";
 
 const UserDetail = () => {
-  const [user, setUser] = useState({});
+  const [user, setUser] = useState(null);
   const users = useSelector(({ users }) => users.usersList);
   const middleware = useSelector(({ middleware }) => middleware);
   const dispatch = useDispatch();
